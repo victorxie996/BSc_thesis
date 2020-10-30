@@ -1,0 +1,4 @@
+Iteration & Trust region &Current Objective & predicted new objective & actual new objective &Current Constraint violation & new constraint violation & Constraint ratio & objective ratio \\ 
+ 01 & 5.00000000 &  0.00 & 565.21 & 565.21 & 3.12630000e+00 & 2.55008009e-01 & 0.918431 & 1.000000 \\ 
+ 02 & 10.00000000 & 565.21 & 577.67 & 575.25 & 2.55008009e-01 & 1.48707544e-01 & 0.416851 & 0.805890 \\ 
+ 03 & 10.00000000 & 575.25 & 576.38 & 575.96 & 1.48707544e-01 & 7.01213539e-02 & 0.528461 & 0.634508 \\ 
