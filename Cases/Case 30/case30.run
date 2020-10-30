@@ -1,0 +1,18 @@
+model AC_Model_new.mod;
+data case30.dat;
+option auxfiles rc;
+option presolve 0;
+write bcase30;
+option log_file 'results30.txt';
+solve;														#Gives objective value and iterations
+display RealPowerGeneration > 'results30.txt';				#Real power generated at each generator
+display ReactivePowerGeneration > 'results30.txt';			#Reactive power generated at each generator
+display RealPowerGenerationAtBuses > 'results30.txt';		#Real power generated at each bus
+display ReactivePowerGenerationAtBuses > 'results30.txt';	#Reactive power generated at each bus
+display VoltageLevel > 'results30.txt';						#Voltage level at each bus
+display VoltagePhase > 'results30.txt';						#Voltage phase at each bus, given as a difference from the reference bus
+display RealPowerInjectionFromBus > 'results30.txt'; 		#Real power injection onto line l, from it's start bus, i.e. pairs (b1,b2)
+display RealPowerInjectionToBus > 'results30.txt';			#Real power injection onto line l, from it's end bus, i.e. pairs (b2,b1)
+display ReactivePowerInjectionFromBus > 'results30.txt';		#Reactive power injection onto line l, from it's start bus, i.e. pairs (b1,b2)
+display ReactivePowerInjectionToBus > 'results30.txt';		#Reactive power injection onto line l, from it's end bus, i.e. pairs (b2,b1)
+option log_file '';
